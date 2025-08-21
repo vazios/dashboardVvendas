@@ -35,7 +35,7 @@ const AdvancedFilters: React.FC<AdvancedFiltersProps> = ({
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-end">
           {/* Filtros de Seleção */}
           <div>
             <label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
@@ -69,14 +69,6 @@ const AdvancedFilters: React.FC<AdvancedFiltersProps> = ({
                 ))}
               </SelectContent>
             </Select>
-          </div>
-
-          {/* Filtro de Período */}
-          <div>
-            <label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
-              Período
-            </label>
-            <DateRangePicker date={dateRange} onDateChange={onDateRangeChange} />
           </div>
         </div>
       </CardContent>
